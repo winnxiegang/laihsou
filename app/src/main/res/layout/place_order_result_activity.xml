@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y100"
+        tools:text="恭喜您，拼团成功！"
+        android:textColor="@color/themeColor"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/tv_result_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y96"
+        android:src="@mipmap/icon_good_success" />
+
+    <TextView
+        android:id="@+id/tv_result_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y54"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        tools:text="恭喜您，拼团成功！"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_14" />
+
+    <Button
+        android:id="@+id/button_share"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="@dimen/x500"
+        android:layout_height="@dimen/y80"
+        android:layout_marginTop="@dimen/y116"
+        android:background="@drawable/round_theme_color_40"
+        android:text="分享给好友"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/button_talking_goods"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="@dimen/x500"
+        android:layout_height="@dimen/y80"
+        android:layout_marginTop="@dimen/y40"
+        android:visibility="gone"
+        android:background="@drawable/round_white_40"
+        android:text="立即拿货"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/font_16"
+        tools:targetApi="lollipop" />
+</LinearLayout>

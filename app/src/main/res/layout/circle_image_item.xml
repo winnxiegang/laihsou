@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/circle_image_show"
+        android:layout_width="@dimen/x224"
+        android:layout_height="@dimen/y190"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:src="@mipmap/icon_zwf_default" />
+</FrameLayout>

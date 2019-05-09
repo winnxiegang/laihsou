@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--房源录入，产权录入按钮-->
+    <style name="house_inputting_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">@dimen/x80</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/themeColor</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--房源录入，产权录入scrollView-->
+    <style name="house_inputting_scrollview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/x80</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!--统一按钮-->
+    <style name="customs_Button_text_white" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:borderlessButtonStyle">@null</item>
+        <item name="android:layout_height">@dimen/x80</item>
+        <item name="android:layout_width">@dimen/x630</item>
+        <!--<item name="android:paddingLeft">@dimen/x45</item>-->
+        <!--<item name="android:paddingRight">@dimen/x45</item>-->
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:background">@drawable/round_phone_code</item>
+    </style>
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/x35"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y50"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请输入您需要帮助与反馈的类型..."
+            android:textColorHint="@color/nv_bg_color"
+            android:textSize="@dimen/font_14" />
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y40"
+            android:layout_marginRight="@dimen/x30" />
+
+        <EditText
+            android:id="@+id/proDescribe"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x300"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y40"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请输入您需要的帮助与反馈的内容..."
+            android:padding="@dimen/x10"
+            android:textColorHint="@color/nv_bg_color"
+            android:textSize="@dimen/font_14" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/imgRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/x25"
+                android:layout_marginRight="@dimen/x25" />
+        </RelativeLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y40"
+            android:layout_marginRight="@dimen/x30" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x30"
+            android:paddingTop="@dimen/y40"
+            android:paddingRight="@dimen/x30"
+            android:paddingBottom="@dimen/y40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:includeFontPadding="false"
+                android:text="QQ号"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_14" />
+
+            <EditText
+                android:id="@+id/edit_qq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x25"
+                android:layout_weight="1"
+                android:background="@null"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="20"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x30"
+            android:paddingTop="@dimen/y40"
+            android:paddingRight="@dimen/x30"
+            android:paddingBottom="@dimen/y40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="手机号"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_14" />
+
+            <EditText
+                android:id="@+id/edit_tel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x25"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="50"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <Button
+            android:id="@+id/feedBackBtn"
+            android:layout_width="@dimen/x500"
+            android:layout_height="@dimen/y90"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x140"
+            android:background="@drawable/round_phone_code"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+</ScrollView>

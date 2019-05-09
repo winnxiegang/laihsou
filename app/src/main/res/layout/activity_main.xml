@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cherishTang.laishou.laishou.main.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:text="Hello World!" />
+
+    <LinearLayout
+        android:id="@+id/nv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/nv_layout"
+        android:orientation="horizontal">
+
+        <com.cherishTang.laishou.custom.customlayout.NavigationButton
+            android:id="@+id/nv_index"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+        <com.cherishTang.laishou.custom.customlayout.NavigationButton
+            android:id="@+id/nv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+        <com.cherishTang.laishou.custom.customlayout.NavigationButton
+            android:id="@+id/nv_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+        <com.cherishTang.laishou.custom.customlayout.NavigationButton
+            android:id="@+id/nv_me"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+</RelativeLayout>

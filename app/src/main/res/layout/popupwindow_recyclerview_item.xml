@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卧室"
+            android:paddingTop="@dimen/x25"
+            android:textSize="@dimen/x32"
+            android:textColor="#000000"/>
+        <View
+            android:layout_marginTop="@dimen/x25"
+            style="@style/h_line"/>
+        <LinearLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <View
+            android:layout_marginTop="@dimen/x25"
+            style="@style/h_line"/>
+        </LinearLayout>
+</RelativeLayout>

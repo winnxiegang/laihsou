@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x600"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rounded_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/x600"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x40"
+        android:paddingRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y40">
+
+        <TextView
+            android:id="@+id/updateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/autoColor"
+            tools:text="是否更新到1.0.1" />
+
+        <TextView
+            android:id="@+id/updateMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x50"
+            android:lineSpacingExtra="@dimen/x25"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_14"
+            tools:text="1、第一条\n2、第二条" />
+
+        <Button
+            android:id="@+id/updateBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginBottom="@dimen/x45"
+            android:layout_marginTop="@dimen/x75"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_phone_code"
+            android:layout_height="@dimen/x70"
+            android:layout_width="@dimen/x520"
+            android:textSize="@dimen/x30"
+            android:textColor="@color/white"
+            android:text="更新" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto_next_line_liner="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x30"
+        android:paddingTop="@dimen/y18"
+        android:paddingRight="@dimen/x30"
+        android:paddingBottom="@dimen/y18"
+        tools:text="正在进行"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/font_14" />
+
+    <View style="@style/h_line_default_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x30">
+
+        <ImageView
+            android:id="@+id/image_show"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y160"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_zwf_default" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_toRightOf="@+id/image_show"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            tools:text="马牌跑团 新年第一炮 蜗牛跑 活动继续燃气"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y14"
+            android:layout_toRightOf="@+id/image_show"
+            android:includeFontPadding="false"
+            tools:text="地址：蜀山区"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/tv_stDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_address"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y14"
+            android:layout_toRightOf="@+id/image_show"
+            android:includeFontPadding="false"
+            tools:text="开始时间：2019-03-01"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/tv_enDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_stDate"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y14"
+            android:layout_toRightOf="@+id/image_show"
+            android:includeFontPadding="false"
+            tools:text="结束时间：2019-05-01"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_12" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingRight="@dimen/x30"
+        android:paddingBottom="@dimen/y18"
+        tools:text="免费"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_14" />
+    <View style="@style/h_line_default_bg"/>
+    <com.cherishTang.laishou.custom.customlayout.AutoNextLineLinearlayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x30"
+        android:paddingTop="@dimen/y24"
+        android:paddingRight="@dimen/x30"
+        android:paddingBottom="@dimen/y24"
+        auto_next_line_liner:grivate="right"
+        auto_next_line_liner:horizontal_Space="@dimen/x30"
+        auto_next_line_liner:isFull="false">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_border_nv_25"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/x30"
+            android:paddingTop="@dimen/y14"
+            android:paddingRight="@dimen/x30"
+            android:paddingBottom="@dimen/y14"
+            android:text="删除活动"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/tv_look_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_border_orange_25"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/x30"
+            android:paddingTop="@dimen/y14"
+            android:paddingRight="@dimen/x30"
+            android:paddingBottom="@dimen/y14"
+            android:text="查看详情"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_12" />
+    </com.cherishTang.laishou.custom.customlayout.AutoNextLineLinearlayout>
+
+</LinearLayout>

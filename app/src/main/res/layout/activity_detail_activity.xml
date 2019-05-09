@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto_next_line_liner="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/default_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/y98"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/top_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y380"
+                android:src="@mipmap/icon_zwf_default" />
+
+            <TextView
+                android:id="@+id/tv_activity_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y24"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30"
+                tools:text="马牌跑团 新年第一炮 蜗牛跑活动"
+                android:textColor="@color/themeColor"
+                android:textSize="@dimen/font_16" />
+
+            <com.cherishTang.laishou.custom.customlayout.AutoNextLineLinearlayout
+                android:id="@+id/bottom_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x30"
+                android:paddingTop="@dimen/y26"
+                android:paddingRight="@dimen/x30"
+                auto_next_line_liner:grivate="left"
+                auto_next_line_liner:horizontal_Space="@dimen/x20"
+                auto_next_line_liner:isFull="false">
+
+                <TextView
+                    style="@style/activity_detail_mark"
+                    android:text="新品上架" />
+            </com.cherishTang.laishou.custom.customlayout.AutoNextLineLinearlayout>
+
+            <View
+                style="@style/h_line_default_bg"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/y26"
+                android:layout_marginRight="@dimen/x30" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y20"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价格："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_12" />
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="免费"
+                    android:textColor="@color/themeColor"
+                    android:textSize="@dimen/font_12" />
+            </LinearLayout>
+
+            <View
+                style="@style/h_line_default_bg"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/y20"
+                android:layout_marginRight="@dimen/x30" />
+
+            <TextView
+                android:id="@+id/tv_organization"
+                tools:text="组织者：XXXX主办方"
+                style="@style/activity_detail_text"/>
+            <TextView
+                android:id="@+id/tv_tel"
+                tools:text="联系电话：15465542154"
+                style="@style/activity_detail_text"/>
+            <TextView
+                android:id="@+id/tv_address"
+                tools:text="地址：蜀山区"
+                style="@style/activity_detail_text"/>
+            <TextView
+                android:id="@+id/tv_date"
+                tools:text="活动时间：2019年2月15日-2019年3月15日"
+                style="@style/activity_detail_text"/>
+
+            <View
+                style="@style/h_area_default_bg"
+                android:layout_marginTop="@dimen/y24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动内容"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y30"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"/>
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="内容文字内容文字内容文字内容文字内容文字内容文字内容 文字内容文字内容文字内容文字内容文字内容文字内容文字内容 文字内"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y30"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_14"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_marginBottom="@dimen/y44"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/pay_submit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="@dimen/x280"
+        android:layout_height="@dimen/y98"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/themeColor"
+        android:text="立即支付"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_18" />
+</RelativeLayout>

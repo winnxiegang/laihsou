@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="@dimen/x500"
+        android:layout_height="@dimen/y554"
+        android:background="@drawable/rounded_white">
+        <TextView
+            android:id="@+id/tv_qr_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫码绑定我"
+            android:textColor="@color/gray"
+            android:includeFontPadding="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y118"
+            android:textSize="@dimen/font_14"/>
+        <ImageView
+            android:layout_below="@+id/tv_qr_tip"
+            android:id="@+id/image_qr_code"
+            android:layout_width="@dimen/y268"
+            android:layout_height="@dimen/y268"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y24"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/image_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/icon_close"
+        android:layout_marginTop="@dimen/y60"/>
+</LinearLayout>

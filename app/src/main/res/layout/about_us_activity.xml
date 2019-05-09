@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/icon_logo"
+        android:layout_marginTop="@dimen/y78"/>
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="莱瘦"
+        android:textColor="@color/dark_black"
+        android:layout_marginTop="@dimen/y30"
+        android:textSize="@dimen/font_16" />
+    <TextView
+        android:id="@+id/tv_go_to_score"
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/y84"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:text="去评分" />
+    <TextView
+        android:id="@+id/tv_agreement"
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:text="用户协议" />
+    <TextView
+        android:id="@+id/tv_cer_info"
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:text="APP认证信息" />
+    <TextView
+        android:id="@+id/tv_plan"
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:text="莱瘦用户使用协议" />
+</LinearLayout>

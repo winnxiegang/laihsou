@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto_next_line_liner="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x30"
+        android:paddingTop="@dimen/y10"
+        android:paddingRight="@dimen/x30"
+        android:paddingBottom="@dimen/y10">
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_14"
+            tools:text="订单号：2019030421344" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_14"
+            tools:text="待发货" />
+    </RelativeLayout>
+
+    <View style="@style/h_line_default_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x30">
+
+        <ImageView
+            android:id="@+id/image_show"
+            android:layout_width="@dimen/x170"
+            android:layout_height="@dimen/y160"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_zwf_default" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x74"
+            android:layout_toRightOf="@+id/image_show"
+            android:includeFontPadding="false"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/font_14"
+            tools:text="YSL圣罗兰黑管唇釉" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="@dimen/x74"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_toRightOf="@+id/image_show"
+            android:includeFontPadding="false"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_14"
+            tools:text="单价：10000莱币" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_price"
+            android:layout_marginLeft="@dimen/x74"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_toRightOf="@+id/image_show"
+            android:includeFontPadding="false"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_14"
+            tools:text="数量：2个" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:paddingLeft="@dimen/x30"
+        android:paddingTop="@dimen/y10"
+        android:paddingRight="@dimen/x30"
+        android:paddingBottom="@dimen/y24"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_14"
+        tools:text="合计：20000莱币" />
+
+    <View style="@style/h_line_default_bg" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y24"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginBottom="@dimen/y24"
+        android:background="@drawable/round_border_nv_25"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingLeft="@dimen/x30"
+        android:paddingTop="@dimen/y14"
+        android:paddingRight="@dimen/x30"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/y14"
+        android:text="删除订单"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_12" />
+
+</LinearLayout>

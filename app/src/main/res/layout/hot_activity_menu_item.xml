@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/y25"
+    android:paddingLeft="@dimen/x30"
+    android:background="@color/white"
+    android:paddingRight="@dimen/x30"
+    android:paddingTop="@dimen/y25">
+
+    <ImageView
+        android:id="@+id/imageView_activity"
+        android:layout_width="@dimen/x320"
+        android:layout_height="@dimen/y200"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_zwf_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x18"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView"
+            android:includeFontPadding="false"
+            tools:text="马牌跑团 新年第一炮 蜗牛跑 活动继续燃气"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="@dimen/y24"
+            android:layout_toRightOf="@+id/imageView"
+            android:includeFontPadding="false"
+            android:text="已结束 蜀山区"
+            android:textColor="@color/gray"
+            android:textSize="11sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="免费"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/font_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/rounded_orange"
+                android:text="仅剩1名额"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/font_10" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

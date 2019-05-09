@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="my_text_view">
+        <attr name="contentText" format="string"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar">
+        <!--星星间距-->
+        <attr name="starDistance" format="dimension" />
+        <!--星星大小-->
+        <attr name="starSize" format="dimension" />
+        <!--星星个数-->
+        <attr name="starCount" format="integer" />
+        <!--星星空图-->
+        <attr name="starEmpty" format="reference" />
+        <!--星星满图-->
+        <attr name="starFill" format="reference" />
+    </declare-styleable>
+    <!--自动换行-->
+    <declare-styleable name="WarpLinearLayout">
+        <attr name="grivate" format="enum"><!--对齐方式 !-->
+            <enum name="right" value="0"></enum>
+            <enum name="left" value="1"></enum>
+            <enum name="center" value="2"></enum>
+        </attr>
+        <attr name="horizontal_Space" format="dimension"></attr>
+        <attr name="vertical_Space" format="dimension"></attr>
+        <attr name="isFull" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="auto3d">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="person_item">
+        <attr name="icon_image" format="integer" />
+        <attr name="item_message" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MyScrollerView">
+        <attr name="visibility_height" format="dimension"></attr>
+    </declare-styleable>
+
+    <attr name="expandedText" format="string" />
+    <attr name="collapsedText" format="string" />
+    <attr name="trimLines" format="integer" />
+
+    <declare-styleable name="MoreTextView">
+        <attr name="expandedText" />
+        <attr name="collapsedText" />
+        <attr name="trimLines" />
+        <attr name="textSize" />
+        <attr name="textColor" />
+    </declare-styleable>
+
+    <declare-styleable name="CollapsedTextView">
+        <attr name="expandedText" />
+        <attr name="collapsedText" />
+        <attr name="trimLines" />
+    </declare-styleable>
+
+    <declare-styleable name="Topbar">
+        <attr name="ttitle" format="string"/>//标题
+        <attr name="isBrowse" format="boolean"/>//是否可以点击浏览大图
+        <attr name="isAutoBanner" format="boolean"/>//是否自动轮播
+        <attr name="isDownLoadLocal" format="boolean"/>//是否缓存本地
+        <attr name="titleTextSize" format="dimension" />//标题大小
+        <attr name="titleTextColor" format="color" />//标题颜色
+        <attr name="leftTextColor" format="color" />//左边文字大小
+        <attr name="leftBackground" format="reference|color" />//左边背景
+        <attr name="leftText" format="string" /> //左边文字
+        <attr name="rightTextColor" format="color" /> //右边文字颜色
+        <attr name="rightBackground" format="reference|color" />//右边背景
+        <attr name="rightText" format="string" /> //右边文字
+    </declare-styleable>
+
+    <declare-styleable name="Custom_Round_Image_View">
+        <attr name="image_view_radius" format="dimension"/>
+        <attr name="left_top_radius" format="dimension"/>
+        <attr name="right_top_radius" format="dimension"/>
+        <attr name="right_bottom_radius" format="dimension"/>
+        <attr name="left_bottom_radius" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="DropDownMenu">
+
+        <attr name="ddunderlineColor" format="color"/>
+        <attr name="dddividerColor" format="color"/>
+        <attr name="ddtextSelectedColor" format="color"/>
+        <attr name="ddtextUnselectedColor" format="color"/>
+        <attr name="ddmenuBackgroundColor" format="color"/>
+        <attr name="ddmaskColor" format="color"/>
+        <attr name="ddmenuTextSize" format="dimension"/>
+        <attr name="ddmenuSelectedIcon" format="reference"/>
+        <attr name="ddmenuUnselectedIcon" format="reference"/>
+        <attr name="ddmenuMenuHeightPercent" format="float"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imageview_radius="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/x166"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.cherishTang.laishou.custom.customlayout.CornersImageView
+        android:id="@+id/image_article"
+        android:layout_width="@dimen/x166"
+        android:layout_height="@dimen/y240"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_banner_default"
+        imageview_radius:image_view_radius="@dimen/x10" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_article_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y25"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lines="2"
+        android:textColor="@color/dark_black"
+        android:textSize="@dimen/font_14"
+        tools:text="过完年" />
+
+</RelativeLayout>

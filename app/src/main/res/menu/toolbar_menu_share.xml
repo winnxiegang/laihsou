@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toolbar_share"
+        android:title="我要推广"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/toolbar_download"
+        android:title="分享"
+        app:showAsAction="never" />
+</menu>

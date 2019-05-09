@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imageview_radius="http://schemas.android.com/apk/res-auto"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:auto_next_line_liner="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/y20"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/x30"
+    android:paddingRight="@dimen/x30"
+    android:paddingTop="@dimen/y20">
+
+    <com.cherishTang.laishou.custom.customlayout.CornersImageView
+        android:id="@+id/showPicture"
+        android:layout_width="@dimen/x160"
+        android:layout_height="@dimen/y160"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_banner_default"
+        imageview_radius:image_view_radius="@dimen/x10" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_club_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lines="1"
+            tools:text="莱瘦俱乐部"
+            android:textColor="@color/dark_black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y10"
+            android:orientation="horizontal">
+
+            <com.cherishTang.laishou.custom.customlayout.StarBar
+                android:id="@+id/starBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ratingbar:starCount="5"
+                ratingbar:starDistance="@dimen/x6"
+                ratingbar:starEmpty="@mipmap/star_empty"
+                ratingbar:starFill="@mipmap/star_full"
+                ratingbar:starSize="@dimen/x25" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x12"
+                android:includeFontPadding="false"
+                tools:text="4.7分"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_10" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_user_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y10"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lines="1"
+            tools:text="已有会员9527名"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_12" />
+        <com.cherishTang.laishou.custom.customlayout.AutoNextLineLinearlayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_mark"
+            android:layout_marginTop="@dimen/y10"
+            auto_next_line_liner:grivate="left"
+            auto_next_line_liner:isFull="false"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y10"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/club_marks"
+                android:text="顾客多多" />
+
+            <TextView
+                style="@style/club_marks"
+                android:text="活动多多" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="right">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_keyword_1"
+                style="@style/club_keyword"
+                android:background="@drawable/rounded_blue"
+                android:visibility="gone"
+                android:text="活" />
+
+            <TextView
+                style="@style/club_keyword"
+                android:id="@+id/tv_keyword_2"
+                android:background="@drawable/rounded_hui"
+                android:visibility="gone"
+                android:text="惠" />
+            <TextView
+                style="@style/club_keyword"
+                android:id="@+id/tv_keyword_3"
+                android:background="@drawable/rounded_tuan"
+                android:visibility="gone"
+                android:text="团" />
+
+            <TextView
+                android:id="@+id/tv_keyword_4"
+                style="@style/club_keyword"
+                android:background="@drawable/rounded_huo"
+                android:visibility="gone"
+                android:text="火" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y52"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lines="1"
+            tools:text="政务区万达写字楼"
+            android:textColor="@color/gray"
+            android:textSize="11sp" />
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y20"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lines="1"
+            tools:text="\u0026\u006c\u0074\u003b100m"
+            android:textColor="@color/gray"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>

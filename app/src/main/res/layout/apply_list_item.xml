@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:paddingRight="@dimen/x48"
+    android:orientation="vertical">
+
+    <com.cherishTang.laishou.custom.customlayout.RoundImageView
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y100"
+        android:id="@+id/apply_head_image"
+        android:src="@mipmap/icon_head_default" />
+
+    <TextView
+        android:id="@+id/tv_apply_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        tools:text="张韶涵"
+        android:textColor="@color/gray"
+        android:layout_marginTop="@dimen/y16"
+        android:textSize="@dimen/font_12" />
+</LinearLayout>

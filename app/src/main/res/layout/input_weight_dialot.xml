@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_white"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入您目前的体重"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/x126"
+        android:layout_marginRight="@dimen/x126"
+        android:includeFontPadding="false"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/font_16"
+        android:layout_marginTop="@dimen/y96"/>
+
+    <EditText
+        android:id="@+id/edit_input"
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/y80"
+        android:layout_marginTop="@dimen/y96"
+        android:layout_gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:background="@drawable/rounded_border_bg_white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KG"
+        android:includeFontPadding="false"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/font_12"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y18"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/y110"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/y24">
+        <Button
+            android:id="@+id/button_cancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y60"
+            android:layout_marginLeft="@dimen/x34"
+            android:background="@drawable/rounded_border_bg_white"
+            android:text="取消"
+            android:textColor="@color/themeColor"
+            android:textSize="@dimen/font_14" />
+
+        <Button
+            android:id="@+id/button_submit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y60"
+            android:layout_marginRight="@dimen/x34"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_phone_code"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+</LinearLayout>

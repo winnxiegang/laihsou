@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x96"
+    android:paddingLeft="@dimen/x35"
+    android:background="@color/white"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/image_backward"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/icon_fh"
+        android:contentDescription="返回按钮"  />
+    <LinearLayout
+        android:id="@+id/fouce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@mipmap/icon_search_title_bg"
+        android:orientation="horizontal">
+        <android.support.v7.widget.SearchView
+            android:id="@+id/view_searcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@color/transparent"
+            app:queryHint="请输入关键字、标签"
+            app:searchIcon="@mipmap/ic_search_app_left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mapLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:paddingRight="@dimen/x35"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/image_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_sx"
+            android:contentDescription="地图图标" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/button_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:lines="1"
+        android:text="列表"
+        android:paddingRight="@dimen/x35"
+        android:visibility="gone"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+</LinearLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y26"
+            android:layout_marginRight="@dimen/x30"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/x150"
+                android:layout_height="@dimen/y150"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_zwf_default" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x60"
+                android:layout_toRightOf="@+id/imageView"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:lines="1"
+                tools:text="张韶涵"
+                android:textColor="@color/themeColor"
+                android:textSize="@dimen/font_16" />
+
+            <LinearLayout
+                android:id="@+id/ll_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x44"
+                android:layout_toRightOf="@+id/tv_name"
+                android:orientation="horizontal">
+
+                <com.cherishTang.laishou.custom.customlayout.StarBar
+                    android:id="@+id/starBar"
+                    ratingbar:starCount="5"
+                    ratingbar:starDistance="@dimen/x6"
+                    ratingbar:starEmpty="@mipmap/star_empty"
+                    ratingbar:starFill="@mipmap/star_full"
+                    ratingbar:starSize="@dimen/x25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:includeFontPadding="false"
+                    tools:text="4.7分"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_below="@+id/ll_star"
+                android:layout_marginTop="@dimen/y30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_user_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x60"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:lines="1"
+                    tools:text="会员：500人"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_14" />
+                <TextView
+                    android:id="@+id/tv_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x90"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:lines="1"
+                    tools:text="瘦身专家"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_phone_code"
+                    android:paddingLeft="@dimen/x8"
+                    android:paddingRight="@dimen/x8"
+                    android:textSize="@dimen/font_12" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x60"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_below="@+id/ll_mark"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:layout_marginTop="@dimen/y30"
+                tools:text="手机：15622228888"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_14" />
+
+
+            <TextView
+                android:id="@+id/tv_club_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageView"
+                android:ellipsize="end"
+                android:layout_below="@+id/tv_tel"
+                android:includeFontPadding="false"
+                android:layout_marginTop="@dimen/y30"
+                android:lines="1"
+                android:layout_marginLeft="@dimen/x60"
+                tools:text="莱瘦俱乐部"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_14" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_modify_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_marginTop="@dimen/y56"
+            android:paddingLeft="@dimen/x30"
+            android:text="个人简介"
+            android:drawablePadding="@dimen/x15"
+            android:drawableRight="@mipmap/consultant_introduction"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_14" />
+        <TextView
+            android:id="@+id/tv_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_marginTop="@dimen/y30"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:text="Ta还没有个人简介哦～"
+            android:paddingBottom="@dimen/y40"
+            android:textColor="@color/nv_bg_color"
+            android:textSize="@dimen/font_12" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_member"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <View style="@style/h_area_default_bg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_marginTop="@dimen/y30"
+                android:paddingLeft="@dimen/x30"
+                android:text="我的会员"
+                android:textColor="@color/themeColor"
+                android:textSize="@dimen/font_16" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mRecyclerView_member"
+                    android:layout_marginTop="@dimen/y40"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/h_area_default_bg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/x30"
+            android:text="风采展示"
+            android:layout_marginTop="@dimen/y30"
+            android:textColor="@color/themeColor"
+            android:textSize="@dimen/font_16" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecyclerView_show"
+                android:layout_marginTop="@dimen/y40"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_marginBottom="@dimen/y25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <View style="@style/h_area_default_bg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_marginTop="@dimen/y60"
+            android:paddingLeft="@dimen/x30"
+            android:text="发布的文章"
+            android:textColor="@color/themeColor"
+            android:textSize="@dimen/font_16" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecyclerView_article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

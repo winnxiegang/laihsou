@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/x25">
+
+    <LinearLayout
+        android:layout_width="@dimen/x240"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/x3"
+        android:paddingBottom="@dimen/x3"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/showPic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_zwf_default" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:lines="1"
+            android:singleLine="true"
+            tools:text="清溪路琥珀山庄 琥珀北村3..."
+            android:textColor="@color/black"
+            android:textSize="@dimen/x32" />
+
+        <TextView
+            android:id="@+id/conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:lines="1"
+            tools:text="2室2厅1卫/85㎡/琥珀山庄"
+            android:textColor="@color/nv_bg_color"
+            android:textSize="@dimen/x24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x18"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/liveIn"
+                style="@style/house_list_small_btn"
+                android:text="拎包入住"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/renovation"
+                style="@style/house_list_small_btn"
+                android:text="精装修" />
+            <TextView
+                android:id="@+id/LeaseMode"
+                style="@style/house_list_small_btn"
+                tools:text="整租" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20">
+
+            <TextView
+                android:id="@+id/payforMoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:lines="1"
+                tools:text="2100/月"
+                android:textColor="@color/price"
+                android:textSize="@dimen/x36" />
+
+            <TextView
+                android:id="@+id/houseSource"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:lines="1"
+                android:text="个人房源"
+                android:textColor="@color/themeColor"
+                android:textSize="@dimen/x24" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

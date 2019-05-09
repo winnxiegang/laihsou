@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/coupon_list_type_head"
+        layout="@layout/fragment_layout_laishou_circle_head" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/AlarmDialog"
+            android:id="@+id/ll_laishou_circle_head_two_buttom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+            <include
+                layout="@layout/item_laishou_circle_head_two_buttom" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linear_tab"
+            android:layout_below="@+id/coupon_list_type_head"
+            android:orientation="vertical"></LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

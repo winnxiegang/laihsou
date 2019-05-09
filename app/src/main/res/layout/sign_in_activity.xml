@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/mSwipeRefreshLayout"
+    android:scrollbars="none">
+
+    <com.cherishTang.laishou.laishou.main.wight.CustomScrollView
+        android:id="@+id/mCustomScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y440"
+                        android:background="@drawable/gradient_orange_color"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_integral"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:padding="@dimen/x30"
+                            android:text="当前莱币：0"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/font_10" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/mRecyclerView_day"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x30"
+                            android:layout_marginRight="@dimen/x30" />
+
+                        <Button
+                            android:id="@+id/button_sign_in"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="@dimen/x288"
+                            android:layout_height="@dimen/y60"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/y70"
+                            android:background="@drawable/round_yellow_30"
+                            android:text="签到获取金币"
+                            android:textColor="@color/orange"
+                            android:textSize="15sp"
+                            tools:targetApi="lollipop" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y112"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/y360"
+                    android:layout_marginRight="@dimen/x30"
+                    android:background="@drawable/rounded_white"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/y26">
+
+                    <com.cherishTang.laishou.custom.customlayout.CustomTextView
+                        android:id="@+id/custom_activity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <com.cherishTang.laishou.custom.customlayout.CustomTextView
+                        android:id="@+id/custom_article"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <com.cherishTang.laishou.custom.customlayout.CustomTextView
+                        android:id="@+id/custom_lpt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <com.cherishTang.laishou.custom.customlayout.CustomTextView
+                        android:id="@+id/custom_integral"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y76"
+                android:background="@color/default_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/orange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_weight="0"
+                    android:text="大家都在兑"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/font_16" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/orange" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mRecyclerView_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.cherishTang.laishou.laishou.main.wight.CustomScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

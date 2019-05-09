@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:person_item="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:clickable="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x592">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y360"
+                    android:background="@color/themeColor"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/x30"
+                        android:paddingTop="@dimen/y13"
+                        android:paddingRight="@dimen/x30"
+                        android:src="@mipmap/icon_me_info" />
+
+                    <ImageView
+                        android:id="@+id/image_sign_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/x30"
+                        android:paddingTop="@dimen/y13"
+                        android:paddingRight="@dimen/x30"
+                        android:src="@mipmap/icon_sign_in" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y232"
+                    android:layout_marginBottom="@dimen/y40"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/y92">
+
+                    <com.cherishTang.laishou.custom.customlayout.CustomTextView
+                        android:id="@+id/custom_grade"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <com.cherishTang.laishou.custom.customlayout.CustomTextView
+                        android:id="@+id/custom_circle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <com.cherishTang.laishou.custom.customlayout.CustomTextView
+                        android:id="@+id/custom_club"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <com.cherishTang.laishou.custom.customlayout.CustomTextView
+                        android:id="@+id/custom_housekeeper"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_user_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/y116"
+                android:layout_marginRight="@dimen/x30"
+                android:background="@drawable/rounded_white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_user_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y100"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:lines="1"
+                    android:text="用户1234567890"
+                    android:textColor="@color/dark_black"
+                    android:textSize="@dimen/font_14" />
+
+                <LinearLayout
+                    android:id="@+id/ll_register_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y14"
+                        android:includeFontPadding="false"
+                        android:text="在莱瘦的第"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_12" />
+
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y14"
+                        android:includeFontPadding="false"
+                        android:text="3"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/font_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y14"
+                        android:includeFontPadding="false"
+                        android:text="天"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y42"
+                    android:layout_marginBottom="@dimen/y26"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_order"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_order_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="6"
+                            android:textColor="@color/dark_black"
+                            android:textSize="@dimen/font_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="订单"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/font_12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_publish_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="1"
+                            android:textColor="@color/dark_black"
+                            android:textSize="@dimen/font_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="发表"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/font_12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_collect"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_collection_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="1"
+                            android:textColor="@color/dark_black"
+                            android:textSize="@dimen/font_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="收藏"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/font_12" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.cherishTang.laishou.custom.customlayout.RoundImageView
+                android:id="@+id/headImg"
+                android:layout_width="@dimen/x150"
+                android:layout_height="@dimen/y150"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x42"
+                android:src="@mipmap/icon_head_default" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_my_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x32"
+            android:layout_marginTop="@dimen/y26"
+            android:layout_marginBottom="@dimen/y26"
+            android:text="我的计划"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_12" />
+
+        <LinearLayout
+            android:id="@+id/ll_plan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y218"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x32"
+                    android:text="减肥"
+                    android:textColor="@color/dark_black"
+                    android:textSize="@dimen/font_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x72"
+                    android:text="减脂"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_16"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_current_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/y40"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_current_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/font_16"
+                        tools:text="100kg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y16"
+                        android:text="当前体重"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/y40"
+                    android:layout_toRightOf="@+id/ll_current_weight"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_target_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50kg"
+                        android:textColor="@color/themeColor"
+                        android:textSize="@dimen/font_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y16"
+                        android:text="目标体重"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/y20"
+                    android:layout_marginRight="@dimen/x30"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_lose_weight"
+                        android:layout_width="@dimen/x200"
+                        android:layout_height="@dimen/y60"
+                        android:background="@drawable/round_theme_color_30"
+                        android:gravity="center"
+                        android:text="开始减肥"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y10"
+                        android:text="不积跬步无以至千里"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_12" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x32"
+                android:layout_marginTop="@dimen/y26"
+                android:layout_marginBottom="@dimen/y26"
+                android:text="我的活动"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_12" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y110"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/club"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x32"
+                    android:text="俱乐部"
+                    android:textColor="@color/dark_black"
+                    android:textSize="@dimen/font_16" />
+
+                <TextView
+                    android:id="@+id/tv_club_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_toRightOf="@+id/club"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/themeColor"
+                    android:textSize="@dimen/font_12"
+                    tools:text="菜瘦俱乐部" />
+
+                <TextView
+                    android:id="@+id/tv_club_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x32"
+                    android:text="暂无排名"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y180"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30">
+
+                <com.cherishTang.laishou.custom.customlayout.RoundImageView
+                    android:id="@+id/counselorHeadImg"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/y100"
+                    android:layout_weight="0"
+                    android:src="@mipmap/icon_head_default" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x42"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_consultant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/font_16"
+                        tools:text="未绑定顾问" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y20"
+                        android:includeFontPadding="false"
+                        android:text="同步成绩，咨询互动"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_12" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_reservation"
+                    style="@style/me_rounded_button"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_weight="0"
+                    android:text="预约" />
+
+                <TextView
+                    android:id="@+id/tv_binding_consultant"
+                    style="@style/me_rounded_button"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_weight="0"
+                    android:text="绑定顾问" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y10"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30">
+
+            <com.cherishTang.laishou.custom.customlayout.CustomPersonItemTextView
+                android:id="@+id/tv_history"
+                style="@style/me_item"
+                android:visibility="gone"
+                person_item:icon_image="@mipmap/me_history"
+                person_item:item_message="浏览记录" />
+
+            <View
+                style="@style/h_line"
+                android:visibility="gone" />
+
+            <com.cherishTang.laishou.custom.customlayout.CustomPersonItemTextView
+                android:id="@+id/tv_coupons"
+                style="@style/me_item"
+                android:visibility="gone"
+                person_item:icon_image="@mipmap/me_sj"
+                person_item:item_message="菜瘦神劵" />
+
+            <View
+                style="@style/h_line"
+                android:visibility="gone" />
+
+            <com.cherishTang.laishou.custom.customlayout.CustomPersonItemTextView
+                android:id="@+id/tv_promote"
+                style="@style/me_item"
+                person_item:icon_image="@mipmap/me_promote"
+                person_item:item_message="我的推广" />
+
+            <View style="@style/h_line" />
+
+            <com.cherishTang.laishou.custom.customlayout.CustomPersonItemTextView
+                android:id="@+id/tv_data_sync"
+                style="@style/me_item"
+                person_item:icon_image="@mipmap/me_tb"
+                person_item:item_message="数据记录" />
+
+            <View style="@style/h_line" />
+
+            <com.cherishTang.laishou.custom.customlayout.CustomPersonItemTextView
+                android:id="@+id/tv_join_in"
+                style="@style/me_item"
+                person_item:icon_image="@mipmap/me_jm"
+                person_item:item_message="我要加盟" />
+
+            <View
+                android:id="@+id/v_nutrition_consultant"
+                style="@style/h_line" />
+
+            <com.cherishTang.laishou.custom.customlayout.CustomPersonItemTextView
+                android:id="@+id/tv_nutrition_consultant"
+                style="@style/me_item"
+                person_item:icon_image="@mipmap/me_yygw"
+                person_item:item_message="我是营养顾问" />
+
+            <View style="@style/h_line"
+                android:visibility="gone" />
+
+            <com.cherishTang.laishou.custom.customlayout.CustomPersonItemTextView
+                android:id="@+id/feed_back"
+                android:visibility="gone"
+                style="@style/me_item"
+                person_item:icon_image="@mipmap/me_feedback"
+                person_item:item_message="帮助反馈" />
+
+            <View style="@style/h_line" />
+
+            <com.cherishTang.laishou.custom.customlayout.CustomPersonItemTextView
+                android:id="@+id/setting"
+                style="@style/me_item"
+                person_item:icon_image="@mipmap/me_setting"
+                person_item:item_message="我的设置" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

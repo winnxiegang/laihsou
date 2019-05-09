@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.cherishTang.laishou.custom.swiperefreshlayout.customswipe.SwipeRefreshLayout
+        android:id="@+id/swiperefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/headview"
+            layout="@layout/pull_to_refresh_header_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never" />
+            </RelativeLayout>
+
+            <com.cherishTang.laishou.custom.empty.EmptyLayout
+                android:id="@+id/emptyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.cherishTang.laishou.custom.swiperefreshlayout.customswipe.SwipeRefreshLayout>
+
+    <!--<TextView
+        android:id="@+id/loading_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/swiperefreshlayout"
+        android:gravity="center"
+        android:text="加载更多"
+        android:textColor="#000000"
+        android:background="#EEEEE0"
+        />-->
+
+
+</RelativeLayout>

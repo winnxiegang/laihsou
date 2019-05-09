@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <FrameLayout
+        android:id="@+id/imgLayout_hot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y380">
+
+        <com.cherishTang.laishou.custom.customlayout.CustomBannerPicture
+            android:id="@+id/customBannerPicture_hot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:isAutoBanner="true"
+            app:isBrowse="false"
+            app:isDownLoadLocal="false" />
+    </FrameLayout>
+    <!-- ViewPage轮播图设置 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x30"
+        android:paddingTop="@dimen/y40"
+        android:paddingRight="@dimen/x30">
+
+        <com.cherishTang.laishou.custom.customlayout.CustomTextView
+            android:id="@+id/hot_menu_yl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onCustomTextViewClick" />
+
+        <com.cherishTang.laishou.custom.customlayout.CustomTextView
+            android:id="@+id/hot_menu_gy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onCustomTextViewClick" />
+
+        <com.cherishTang.laishou.custom.customlayout.CustomTextView
+            android:id="@+id/hot_menu_jh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onCustomTextViewClick" />
+
+        <com.cherishTang.laishou.custom.customlayout.CustomTextView
+            android:id="@+id/hot_menu_px"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onCustomTextViewClick" />
+
+        <com.cherishTang.laishou.custom.customlayout.CustomTextView
+            android:id="@+id/hot_menu_ly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onCustomTextViewClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x30"
+        android:paddingTop="@dimen/y52"
+        android:paddingRight="@dimen/x30"
+        android:paddingBottom="@dimen/y10">
+
+        <com.cherishTang.laishou.custom.customlayout.CustomTextView
+            android:id="@+id/hot_menu_yd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onCustomTextViewClick" />
+
+        <com.cherishTang.laishou.custom.customlayout.CustomTextView
+            android:id="@+id/hot_menu_mr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onCustomTextViewClick" />
+
+        <com.cherishTang.laishou.custom.customlayout.CustomTextView
+            android:id="@+id/hot_menu_cy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onCustomTextViewClick" />
+
+        <com.cherishTang.laishou.custom.customlayout.CustomTextView
+            android:id="@+id/hot_menu_dy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onCustomTextViewClick" />
+
+        <com.cherishTang.laishou.custom.customlayout.CustomTextView
+            android:id="@+id/hot_menu_qb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onCustomTextViewClick" />
+    </LinearLayout>
+
+
+</LinearLayout>

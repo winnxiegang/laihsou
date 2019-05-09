@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/y10"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/x30"
+            android:paddingTop="@dimen/y18"
+            android:paddingRight="@dimen/x30"
+            android:paddingBottom="@dimen/y18">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付方式"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:id="@+id/tv_pay_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@mipmap/pay_method_more"
+                android:drawablePadding="@dimen/x12"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/font_14"
+                tools:text="在线支付" />
+        </RelativeLayout>
+
+
+        <View style="@style/h_line_default_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x30">
+
+            <ImageView
+                android:id="@+id/image_show"
+                android:layout_width="@dimen/x200"
+                android:layout_height="@dimen/y160"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_zwf_default" />
+
+            <TextView
+                android:id="@+id/tv_activity_pay_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_toRightOf="@+id/image_show"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/font_14"
+                tools:text="马牌跑团 新年第一炮 蜗牛跑 活动继续燃气" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_activity_pay_title"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/y14"
+                android:layout_toRightOf="@+id/image_show"
+                android:includeFontPadding="false"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_12"
+                tools:text="地址：蜀山区" />
+
+            <TextView
+                android:id="@+id/tv_stDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_address"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/y14"
+                android:layout_toRightOf="@+id/image_show"
+                android:includeFontPadding="false"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_12"
+                tools:text="开始时间：2019-03-01" />
+
+            <TextView
+                android:id="@+id/tv_enDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_stDate"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/y14"
+                android:layout_toRightOf="@+id/image_show"
+                android:includeFontPadding="false"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_12"
+                tools:text="结束时间：2019-05-01" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x32"
+            android:textColor="@color/themeColor"
+            android:textSize="@dimen/font_18"
+            tools:text="免费" />
+
+        <Button
+            android:id="@+id/pay_submit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/x280"
+            android:layout_height="@dimen/y98"
+            android:layout_alignParentRight="true"
+            android:background="@color/themeColor"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_18" />
+    </RelativeLayout>
+</RelativeLayout>

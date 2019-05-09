@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/default_background">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/feed_back_success"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y90"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交成功！"
+        android:textSize="@dimen/font_16"
+        android:gravity="center_horizontal"
+        android:textColor="@color/dark_black"
+        android:layout_marginTop="@dimen/y80"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x120"
+        android:layout_marginRight="@dimen/x120"
+        android:text="莱瘦团队会在1-3个工作日内给您处理， 以站内消息的方式给您回复请您注意查看消息～"
+        android:textSize="@dimen/font_12"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:layout_marginTop="@dimen/y30"/>
+</LinearLayout>

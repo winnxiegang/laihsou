@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto_next_line_liner="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y300"
+            android:background="@mipmap/green_ty">
+
+            <com.cherishTang.laishou.custom.customlayout.RoundImageView
+                android:id="@+id/head_image"
+                android:layout_width="@dimen/x150"
+                android:layout_height="@dimen/y150"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y90"
+                android:src="@mipmap/icon_head_default" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y40"
+            android:background="@color/white" />
+
+        <View style="@style/h_line_default_bg" />
+        <!--手机号码-->
+        <LinearLayout style="@style/me_linearLayout">
+
+            <LinearLayout style="@style/me_linearLayout_left">
+
+                <TextView
+                    style="@style/me_custom_item"
+                    android:drawableLeft="@mipmap/icon_message_mobile"
+                    android:text="手机号码" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_tel"
+                style="@style/me_custom_edit"
+                android:maxLength="11"
+                android:inputType="number"
+                android:hint="请输入您的手机号码" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <!--姓名-->
+        <LinearLayout style="@style/me_linearLayout">
+
+            <LinearLayout style="@style/me_linearLayout_left">
+
+                <TextView
+                    style="@style/me_custom_item"
+                    android:drawableLeft="@mipmap/icon_message_name"
+                    android:text="姓名" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_name"
+                style="@style/me_custom_edit"
+                android:maxLength="10"
+                android:hint="请输入您的姓名" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <!--性别-->
+        <LinearLayout style="@style/me_linearLayout">
+
+            <LinearLayout style="@style/me_linearLayout_left">
+
+                <TextView
+                    style="@style/me_custom_item"
+                    android:drawableLeft="@mipmap/icon_message_sex"
+                    android:text="性别" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sex"
+                style="@style/me_custom_text"
+                android:hint="请选择您的性别" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <!--生日-->
+        <LinearLayout style="@style/me_linearLayout">
+
+            <LinearLayout style="@style/me_linearLayout_left">
+
+                <TextView
+                    style="@style/me_custom_item"
+                    android:drawableLeft="@mipmap/icon_message_birthday"
+                    android:text="生日" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                style="@style/me_custom_text"
+                android:hint="请选择您的生日" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <!--身高-->
+        <LinearLayout style="@style/me_linearLayout">
+
+            <LinearLayout style="@style/me_linearLayout_left">
+
+                <TextView
+                    style="@style/me_custom_item"
+                    android:drawableLeft="@mipmap/icon_message_height"
+                    android:text="身高(单位：cm)" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_height"
+                style="@style/me_custom_edit"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:hint="请输入您的身高" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <!--体重-->
+        <LinearLayout style="@style/me_linearLayout">
+
+            <LinearLayout style="@style/me_linearLayout_left">
+
+                <TextView
+                    style="@style/me_custom_item"
+                    android:drawableLeft="@mipmap/icon_message_weight"
+                    android:text="体重(单位：KG)" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_weight"
+                style="@style/me_custom_edit"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:hint="请输入您的体重" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <!--目标体重-->
+        <LinearLayout style="@style/me_linearLayout">
+
+            <LinearLayout style="@style/me_linearLayout_left">
+
+                <TextView
+                    style="@style/me_custom_item"
+                    android:drawableLeft="@mipmap/icon_message_weight"
+                    android:text="目标体重(单位：KG)" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_target_weight"
+                style="@style/me_custom_edit"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:hint="请输入您的目标体重" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <!--个人喜好-->
+        <LinearLayout style="@style/me_linearLayout">
+
+            <LinearLayout style="@style/me_linearLayout_left">
+
+                <TextView
+                    style="@style/me_custom_item"
+                    android:drawableLeft="@mipmap/icon_message_habit"
+                    android:text="个人喜好" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/me_custom_text">
+
+                <com.cherishTang.laishou.custom.customlayout.AutoNextLineLinearlayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/auto_layout"
+                    auto_next_line_liner:grivate="left"
+                    auto_next_line_liner:horizontal_Space="@dimen/x20"
+                    auto_next_line_liner:isFull="false"
+                    auto_next_line_liner:vertical_Space="@dimen/x20">
+
+                    <TextView
+                        android:id="@+id/tv_habit_football"
+                        style="@style/habit_marks"
+                        android:text="足球" />
+
+                    <TextView
+                        android:id="@+id/tv_habit_basketball"
+                        style="@style/habit_marks"
+                        android:text="篮球" />
+
+                    <TextView
+                        android:id="@+id/tv_habit_fitness"
+                        style="@style/habit_marks"
+                        android:text="健身" />
+
+                    <TextView
+                        android:id="@+id/tv_habit_music"
+                        style="@style/habit_marks"
+                        android:text="音乐" />
+
+                    <TextView
+                        android:id="@+id/tv_habit_read"
+                        style="@style/habit_marks"
+                        android:text="读书" />
+
+                    <TextView
+                        android:id="@+id/tv_habit_game"
+                        style="@style/habit_marks"
+                        android:text="游戏" />
+                </com.cherishTang.laishou.custom.customlayout.AutoNextLineLinearlayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <!--所处行业-->
+        <LinearLayout style="@style/me_linearLayout">
+
+            <LinearLayout style="@style/me_linearLayout_left">
+
+                <TextView
+                    style="@style/me_custom_item"
+                    android:drawableLeft="@mipmap/icon_message_business"
+                    android:text="所处行业" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_business"
+                style="@style/me_custom_edit"
+                android:hint="请输入您的行业" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <!--工作职位-->
+        <LinearLayout style="@style/me_linearLayout">
+
+            <LinearLayout style="@style/me_linearLayout_left">
+
+                <TextView
+                    style="@style/me_custom_item"
+                    android:drawableLeft="@mipmap/icon_message_business"
+                    android:text="工作职位" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_professional"
+                style="@style/me_custom_edit"
+                android:hint="请输入您的职业" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <!--腰围-->
+        <LinearLayout style="@style/me_linearLayout">
+
+            <LinearLayout style="@style/me_linearLayout_left">
+
+                <TextView
+                    style="@style/me_custom_item"
+                    android:drawableLeft="@mipmap/icon_message_business"
+                    android:text="腰围" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_yw"
+                style="@style/me_custom_edit"
+                android:inputType="numberDecimal"
+                android:hint="请输入您的腰围" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <!--胸围-->
+        <LinearLayout style="@style/me_linearLayout">
+
+            <LinearLayout style="@style/me_linearLayout_left">
+
+                <TextView
+                    style="@style/me_custom_item"
+                    android:drawableLeft="@mipmap/icon_message_business"
+                    android:text="胸围" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_xw"
+                style="@style/me_custom_edit"
+                android:inputType="numberDecimal"
+                android:hint="请输入您的胸围" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+        <!--臀围-->
+        <LinearLayout style="@style/me_linearLayout">
+
+            <LinearLayout style="@style/me_linearLayout_left">
+
+                <TextView
+                    style="@style/me_custom_item"
+                    android:drawableLeft="@mipmap/icon_message_business"
+                    android:text="臀围" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_tw"
+                style="@style/me_custom_edit"
+                android:inputType="numberDecimal"
+                android:hint="请输入您的臀围" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line_default_bg"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30" />
+
+        <Button
+            android:id="@+id/button_submit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/x500"
+            android:layout_height="@dimen/y99"
+            android:layout_marginTop="@dimen/y60"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_phone_code"
+            android:text="提交"
+            android:layout_marginBottom="@dimen/y54"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16"
+            tools:targetApi="lollipop" />
+    </LinearLayout>
+
+</ScrollView>

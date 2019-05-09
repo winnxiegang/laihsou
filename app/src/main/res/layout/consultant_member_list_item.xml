@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/y10"
+    android:paddingBottom="@dimen/y10"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <com.cherishTang.laishou.custom.customlayout.RoundImageView
+        android:id="@+id/image_head"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x80"
+        android:layout_weight="0"
+        android:layout_marginRight="@dimen/x25"
+        android:src="@mipmap/icon_head_default" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="小灰灰"
+        android:layout_weight="1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_14" />
+    <TextView
+        android:id="@+id/tv_tel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="13800001111"
+        android:layout_weight="2"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_12" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="63kg"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/tv_weight"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/font_12" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="63kg"
+        android:layout_weight="1"
+        android:id="@+id/tv_bmi"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/font_12" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View style="@style/h_area_default_bg"/>
+    <EditText
+        android:id="@+id/edit_circle_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y260"
+        android:maxLength="200"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:inputType="text"
+        android:background="@null"
+        android:padding="@dimen/x30"
+        android:textColor="@color/autoColor"
+        android:textSize="@dimen/font_14"
+        android:hint="请输入内容"/>
+    <View style="@style/h_line_default_bg"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x30">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView_Circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</LinearLayout>

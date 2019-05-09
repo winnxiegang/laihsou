@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:auto_next_line_liner="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/y10"
+        android:paddingBottom="@dimen/y10"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30">
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="订单号：2019030421344"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_14" />
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="待发货"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+    <View style="@style/h_line_default_bg"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_background"
+        android:padding="@dimen/x30">
+    <ImageView
+        android:id="@+id/image_show"
+        android:layout_width="@dimen/x170"
+        android:layout_height="@dimen/y160"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_zwf_default"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginLeft="@dimen/x74"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="【新用户专享】黑茶牙膏酵素深层 美白防蛀薄荷牙膏 薄荷香型 ..."
+            android:includeFontPadding="false"
+            android:layout_toRightOf="@+id/image_show"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/font_14" />
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="@dimen/x74"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_toRightOf="@+id/image_show"
+            tools:text="数量：2个"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="合计：￥5.99"
+            android:paddingTop="@dimen/y18"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:layout_gravity="right"
+            android:paddingBottom="@dimen/y18"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_14" />
+    <View style="@style/h_line_default_bg"/>
+    <com.cherishTang.laishou.custom.customlayout.AutoNextLineLinearlayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_menu"
+        auto_next_line_liner:grivate="right"
+        auto_next_line_liner:isFull="false"
+        android:paddingTop="@dimen/y24"
+        android:paddingBottom="@dimen/y24"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30">
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消订单"
+            android:textColor="@color/gray"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:paddingTop="@dimen/y14"
+            android:paddingBottom="@dimen/y14"
+            android:includeFontPadding="false"
+            android:background="@drawable/round_border_nv_25"
+            android:textSize="@dimen/font_12" />
+        <TextView
+            android:id="@+id/tv_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="邀请好友拼单"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:paddingTop="@dimen/y14"
+            android:paddingBottom="@dimen/y14"
+            android:includeFontPadding="false"
+            android:textColor="@color/orange"
+            android:background="@drawable/round_border_orange_25"
+            android:textSize="@dimen/font_12" />
+    </com.cherishTang.laishou.custom.customlayout.AutoNextLineLinearlayout>
+
+</LinearLayout>

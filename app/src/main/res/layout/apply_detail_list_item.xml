@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="@dimen/x30"
+    android:paddingRight="@dimen/x30"
+    android:paddingTop="@dimen/y20"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/y20"
+    android:gravity="center_vertical">
+
+    <com.cherishTang.laishou.custom.customlayout.RoundImageView
+        android:id="@+id/applyHeadImageView"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y100"
+        android:src="@mipmap/icon_head_default" />
+
+    <TextView
+        android:id="@+id/tv_apply_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x44"
+        android:layout_toRightOf="@+id/applyHeadImageView"
+        android:layout_centerVertical="true"
+        android:includeFontPadding="false"
+        tools:text="张韶涵"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_14" />
+
+    <TextView
+        android:id="@+id/tv_apply_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:includeFontPadding="false"
+        android:layout_marginLeft="@dimen/x20"
+        tools:text="5小时"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_14" />
+</RelativeLayout>

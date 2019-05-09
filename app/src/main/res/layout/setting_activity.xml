@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_notice"
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/y30"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:text="消息通知" />
+    <View
+        style="@style/h_line_default_bg" />
+    <TextView
+        android:id="@+id/tv_privacy"
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:text="隐私" />
+    <View
+        style="@style/h_line_default_bg" />
+    <TextView
+        android:id="@+id/tv_modify_password"
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:text="修改密码" />
+    <LinearLayout
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/y30"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="清除缓存"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/font_16" />
+        <TextView
+            android:id="@+id/tv_clean_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="0.0M"
+            android:textColor="@color/nv_bg_color"
+            android:drawableRight="@mipmap/ic_arrow_right"
+            android:drawablePadding="@dimen/x12"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/y30"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="微信"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/font_16" />
+        <TextView
+            android:id="@+id/tv_WeChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="未绑定"
+            android:textColor="@color/nv_bg_color"
+            android:drawableRight="@mipmap/ic_arrow_right"
+            android:drawablePadding="@dimen/x12"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+    <View
+        style="@style/h_line_default_bg"
+        android:visibility="gone" />
+    <LinearLayout
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="QQ"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/font_16" />
+        <TextView
+            android:id="@+id/tv_QQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="未绑定"
+            android:textColor="@color/nv_bg_color"
+            android:drawableRight="@mipmap/ic_arrow_right"
+            android:drawablePadding="@dimen/x12"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+    <View
+
+        style="@style/h_line_default_bg"
+        android:visibility="gone"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_share"
+        android:layout_marginTop="@dimen/y30"
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:text="分享莱瘦" />
+    <View
+        style="@style/h_line_default_bg" />
+    <TextView
+        android:id="@+id/tv_about_us"
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:text="关于莱瘦" />
+
+    <Button
+        android:id="@+id/setting_exit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x88"
+        android:layout_marginTop="@dimen/x30"
+        android:background="@color/themeColor"
+        android:elevation="0dp"
+        android:text="@string/setting_exit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        tools:targetApi="lollipop" />
+</LinearLayout>

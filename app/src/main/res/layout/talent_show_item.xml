@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/image_talent"
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/y200"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_zwf_default" />
+</LinearLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:scrollbars="none">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/y98"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y380"
+                android:background="@color/dark_black">
+
+                <ImageView
+                    android:id="@+id/hot_activity_detail_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/icon_banner_default" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30"
+                android:paddingBottom="@dimen/y40">
+
+                <TextView
+                    android:id="@+id/tv_activity_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y34"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/dark_black"
+                    android:textSize="17sp"
+                    tools:text="2019蜀山半程马拉松赛报团" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y30"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_browse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/banner_detail_eye"
+                        android:drawablePadding="@dimen/x15"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_12"
+                        tools:text="2087" />
+
+                    <TextView
+                        android:id="@+id/tv_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_toRightOf="@+id/tv_browse"
+                        android:drawableLeft="@mipmap/banner_detail_share"
+                        android:drawablePadding="@dimen/x15"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_12"
+                        tools:text="63" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_collect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_toRightOf="@+id/tv_share"
+                        android:drawableLeft="@mipmap/banner_detail_collect"
+                        android:drawablePadding="@dimen/x15"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_12"
+                        tools:text="2" />
+
+                    <TextView
+                        android:id="@+id/tv_deal_security"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x15"
+                        android:layout_toLeftOf="@+id/tv_refund"
+                        android:drawableLeft="@mipmap/banner_detail_right"
+                        android:drawablePadding="@dimen/x15"
+                        android:includeFontPadding="false"
+                        android:text="交易保障"
+                        android:textColor="@color/themeColor"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_refund"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@mipmap/banner_detail_right"
+                        android:includeFontPadding="false"
+                        android:text="支持退款"
+                        android:textColor="@color/themeColor"
+                        android:textSize="11sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_business_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y42"
+                    android:drawableLeft="@mipmap/banner_detail_time"
+                    android:drawablePadding="@dimen/x15"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_14"
+                    tools:text="04-14 08:00 至 11:00" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y40"
+                    android:drawableLeft="@mipmap/banner_detail_address"
+                    android:drawableRight="@mipmap/ic_arrow_right"
+                    android:drawablePadding="@dimen/x15"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_14"
+                    tools:text="安徽省合肥市蜀山去湖光路1181号附近 中国... " />
+
+                <TextView
+                    android:id="@+id/tv_apply_people"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y40"
+                    android:drawableLeft="@mipmap/banner_detail_apply"
+                    android:drawablePadding="@dimen/x15"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_14"
+                    tools:text="已报名119人" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y40">
+
+                    <TextView
+                        android:id="@+id/tv_activity_owner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/activity_jbf"
+                        android:drawablePadding="@dimen/x15"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_14"
+                        tools:text="举办方：莱瘦俱乐部" />
+
+                    <ImageView
+                        android:id="@+id/activity_image_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/activity_tel" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_activity_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y40"
+                    android:drawableLeft="@mipmap/banner_detail_cost"
+                    android:drawableRight="@mipmap/ic_arrow_right"
+                    android:drawablePadding="@dimen/x15"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/font_14"
+                    tools:text="￥50～100" />
+            </LinearLayout>
+
+            <View style="@style/h_area_default_bg" />
+
+            <TextView
+                android:id="@+id/tv_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y40"
+                android:layout_marginBottom="@dimen/y40"
+                android:includeFontPadding="false"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_14"
+                tools:text="2019年蜀山国际半程马拉松比赛团报开始了。 比赛时间：2019年4月14日！ 团报时间：即日起至2月21日截止，先报先得不用" />
+
+            <View style="@style/h_area_default_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x30"
+                android:paddingTop="@dimen/y40"
+                android:paddingRight="@dimen/x30"
+                android:paddingBottom="@dimen/y40">
+
+                <TextView
+                    android:id="@+id/tv_apply_recycler_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="已报名"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/tv_more_apply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:includeFontPadding="false"
+                    android:text="更多报名"
+                    android:textColor="@color/themeColor"
+                    android:textSize="@dimen/font_12" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecyclerViewApply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y64"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/pay_submit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="@dimen/x280"
+        android:layout_height="@dimen/y98"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/themeColor"
+        android:text="立即支付"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_18" />
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/y20"
+    android:paddingLeft="@dimen/x30"
+    android:paddingRight="@dimen/x30"
+    android:paddingTop="@dimen/y20">
+
+    <ImageView
+        android:id="@+id/imageView_gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/cup_first"/>
+    <com.cherishTang.laishou.custom.customlayout.RoundImageView
+        android:id="@+id/consultant_head"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y100"
+        android:layout_marginLeft="@dimen/x54"
+        android:layout_weight="0"
+        android:src="@mipmap/icon_head_default"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x46"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_rank"
+                android:layout_width="@dimen/x28"
+                android:layout_height="@dimen/y28"
+                android:text="1"
+                android:textSize="@dimen/font_12"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:background="@drawable/cycle_theme_color"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_consultant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:lines="1"
+                tools:text="张韶涵"
+                android:layout_marginLeft="@dimen/x22"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_14" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约"
+                android:textSize="@dimen/font_10"
+                android:layout_marginLeft="@dimen/x40"
+                android:background="@drawable/rounded_orange_bg"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绑定"
+                android:textSize="@dimen/font_10"
+                android:paddingLeft="@dimen/x14"
+                android:paddingRight="@dimen/x14"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@drawable/round_phone_code"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y18"
+            android:orientation="horizontal">
+
+            <com.cherishTang.laishou.custom.customlayout.StarBar
+                android:id="@+id/starBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ratingbar:starCount="5"
+                ratingbar:starDistance="@dimen/x6"
+                ratingbar:starEmpty="@mipmap/star_empty"
+                ratingbar:starFill="@mipmap/star_full"
+                ratingbar:starSize="@dimen/x25" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x12"
+                android:includeFontPadding="false"
+                tools:text="4.7分"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_10" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_consultant_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lines="1"
+            android:layout_marginTop="@dimen/y16"
+            android:text="15666668888   500学员   莱瘦俱乐部"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+</LinearLayout>

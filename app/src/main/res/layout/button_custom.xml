@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/popupwind_conditions_text"
+    android:id="@+id/customBtn"
+    android:textColor="@color/btn_textcolor_unselected"
+    android:text="三卫" />

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:orientation="vertical">
+    <LinearLayout
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/y30"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="新消息通知"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/font_16" />
+        <TextView
+            android:id="@+id/tv_clean_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="已关闭"
+            android:textColor="@color/nv_bg_color"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y14"
+        android:layout_marginBottom="@dimen/y30"
+        android:text="如果你要关闭或开启莱瘦的新消息通知，请在手机“设置”-“通 知”功能中，找到应用“莱瘦”操作"
+        android:textColor="@color/nv_bg_color"
+        android:textSize="@dimen/font_12" />
+    <LinearLayout
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="免打扰设置"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/font_16" />
+
+        <ToggleButton
+            android:id="@+id/tglSound_no_disturb"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y54"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_butn_toggle"
+            android:checked="true"
+            android:layout_weight="1"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y14"
+        android:layout_marginBottom="@dimen/y30"
+        android:text="开启后，将在23:00-8:00间不接受莱瘦的通知（不包含提醒）"
+        android:textColor="@color/nv_bg_color"
+        android:textSize="@dimen/font_12" />
+    <LinearLayout
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="声音"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/font_16" />
+
+        <ToggleButton
+            android:id="@+id/tglSound_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y54"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_butn_toggle"
+            android:checked="true"
+            android:layout_weight="1"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+    <View style="@style/h_line_default_bg"/>
+    <LinearLayout
+        style="@style/setting_activity_item"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="震动"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/font_16" />
+
+        <ToggleButton
+            android:id="@+id/tglSound_shake"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y54"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_butn_toggle"
+            android:checked="true"
+            android:layout_weight="1"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y14"
+        android:layout_marginBottom="@dimen/y30"
+        android:text="当莱瘦在运行时，你可以设置是否需要声音或震动"
+        android:textColor="@color/nv_bg_color"
+        android:textSize="@dimen/font_12" />
+</LinearLayout>

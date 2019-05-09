@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/user_message_text"
+            android:layout_marginTop="@dimen/y134"
+            android:text="注册" />
+
+        <EditText
+            android:id="@+id/edit_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x84"
+            android:layout_marginRight="@dimen/x84"
+            android:layout_marginTop="@dimen/y190"
+            android:inputType="number"
+            android:maxLength="11"
+            android:background="@drawable/bottom_line_theme_color"
+            android:hint="请输入您的手机号码"
+            android:drawableLeft="@mipmap/ic_login_tel"
+            android:drawablePadding="@dimen/x25"
+            android:paddingBottom="@dimen/y15"
+            android:textSize="@dimen/font_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x84"
+            android:layout_marginRight="@dimen/x84"
+            android:layout_marginTop="@dimen/y84"
+            android:background="@drawable/bottom_line_theme_color"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/y15">
+
+            <EditText
+                android:id="@+id/edit_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="6"
+                android:drawableLeft="@mipmap/ic_login_phone_code"
+                android:drawablePadding="@dimen/x25"
+                android:hint="请输入您的验证码"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/phone_number_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0"
+                android:text="获取验证码"
+                android:textColor="@color/themeColor"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x84"
+            android:layout_marginRight="@dimen/x84"
+            android:layout_marginTop="@dimen/y84"
+            android:drawableLeft="@mipmap/ic_login_password"
+            android:drawablePadding="@dimen/x25"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:background="@drawable/bottom_line_theme_color"
+            android:hint="请输入您的密码"
+            android:paddingBottom="@dimen/y15"
+            android:textSize="@dimen/font_16" />
+        <Button
+            android:id="@+id/register_submit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y88"
+            android:layout_marginLeft="@dimen/x84"
+            android:layout_marginRight="@dimen/x84"
+            android:layout_marginTop="@dimen/x125"
+            android:background="@drawable/round_phone_code"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:targetApi="lollipop" />
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y44"
+            android:includeFontPadding="false"
+            android:text="登录"
+            android:textColor="@color/themeColor"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>

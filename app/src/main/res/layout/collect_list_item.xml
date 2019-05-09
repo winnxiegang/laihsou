@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rounded_white_5">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x10">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/x310"
+            android:layout_height="@dimen/y228"
+            android:src="@mipmap/icon_zwf_default"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_below="@+id/image"
+            android:layout_marginTop="@dimen/y18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:gravity="left"
+            tools:text="【新用户专享】黑茶牙膏酵素 深层美白防蛀薄荷牙膏 薄..."
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/font_12"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="@dimen/y18"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:paddingBottom="@dimen/y20"
+            tools:text="过年的一顿猛吃后，肚子上只剩 一堆肉，去之难度"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_10" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_collect_num"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="@dimen/y32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2019"
+        android:paddingLeft="@dimen/x14"
+        android:paddingRight="@dimen/x12"
+        android:paddingTop="@dimen/y10"
+        android:paddingBottom="@dimen/y10"
+        android:includeFontPadding="false"
+        android:drawableLeft="@mipmap/icon_collect_star"
+        android:drawablePadding="@dimen/x8"
+        android:background="@drawable/rounded_orange_bg_right_18"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_10"/>
+
+</FrameLayout>

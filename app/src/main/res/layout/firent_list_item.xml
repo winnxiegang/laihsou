@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x30"
+    android:layout_marginTop="@dimen/y8"
+    android:layout_marginRight="@dimen/x30"
+    android:layout_marginBottom="@dimen/y8"
+    android:paddingLeft="@dimen/x25"
+    android:paddingTop="@dimen/y20"
+    android:paddingRight="@dimen/x25"
+    android:paddingBottom="@dimen/y20"
+    android:gravity="center_vertical"
+    android:background="@drawable/rounded_white"
+    android:orientation="horizontal">
+
+    <com.cherishTang.laishou.custom.customlayout.RoundImageView
+        android:id="@+id/image_head"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y100"
+        android:layout_weight="0"
+        android:src="@mipmap/icon_head_default" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_weight="1"
+        android:text="韩红"
+        android:textColor="@color/dark_black"
+        android:textSize="@dimen/font_14" />
+    <TextView
+        android:layout_width="@dimen/x160"
+        android:layout_height="@dimen/y50"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_weight="0"
+        android:text="pk"
+        android:id="@+id/tv_pk"
+        android:gravity="center"
+        android:background="@drawable/round_theme_color_border_25"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/font_14" />
+</LinearLayout>

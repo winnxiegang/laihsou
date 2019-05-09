@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_show"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="@dimen/lay_12"
+        android:layout_marginRight="@dimen/lay_16"
+        android:layout_marginTop="@dimen/lay_12"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_zwf_default" />
+
+    <ImageView
+        android:id="@+id/iv_clear_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/lay_4"
+        android:layout_marginTop="@dimen/lay_4"
+        android:background="@drawable/ib_clear_image_selector"
+        android:visibility="gone" />
+</FrameLayout>
